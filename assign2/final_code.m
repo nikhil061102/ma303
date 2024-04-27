@@ -126,7 +126,7 @@ while any(zero_bool_mat_copy(:))
 
     for row_num = 1:size(zero_bool_mat_copy, 1)
         if sum(zero_bool_mat_copy(row_num, :) == true) > 0 && min_row(1) > sum(zero_bool_mat_copy(row_num, :) == true)
-            min_row = [sum(zero_bool_mat_copy(row_num, :) == true), row_num];
+            min_row = [sum(zero_bool_mat_copy(row_num, :) == true), row_num]
         end
     end
 
